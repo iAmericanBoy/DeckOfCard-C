@@ -12,6 +12,7 @@
 		B6E92EBF221369ED00563F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E92EBE221369ED00563F25 /* Assets.xcassets */; };
 		B6E92EC2221369ED00563F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E92EC0221369ED00563F25 /* LaunchScreen.storyboard */; };
 		B6E92EC5221369ED00563F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E92EC4221369ED00563F25 /* main.m */; };
+		B6E92ECF22136FBB00563F25 /* DLCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E92ECE22136FBB00563F25 /* DLCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		B6E92EC1221369ED00563F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E92EC3221369ED00563F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6E92EC4221369ED00563F25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6E92ECD22136FBB00563F25 /* DLCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCard.h; sourceTree = "<group>"; };
+		B6E92ECE22136FBB00563F25 /* DLCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 			children = (
 				B6E92EB5221369E900563F25 /* AppDelegate.h */,
 				B6E92EB6221369E900563F25 /* AppDelegate.m */,
+				B6E92ED022136FC000563F25 /* Model */,
 				B6E92ECC22136A0900563F25 /* Views */,
 				B6E92ECB22136A0200563F25 /* Resources */,
 			);
@@ -80,6 +84,15 @@
 				B6E92EBB221369EA00563F25 /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B6E92ED022136FC000563F25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6E92ECD22136FBB00563F25 /* DLCard.h */,
+				B6E92ECE22136FBB00563F25 /* DLCard.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E92ECF22136FBB00563F25 /* DLCard.m in Sources */,
 				B6E92EC5221369ED00563F25 /* main.m in Sources */,
 				B6E92EB7221369E900563F25 /* AppDelegate.m in Sources */,
 			);
@@ -297,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6B8ZX28ZW;
-				INFOPLIST_FILE = "DeckOfCard-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCard-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6B8ZX28ZW;
-				INFOPLIST_FILE = "DeckOfCard-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCard-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
