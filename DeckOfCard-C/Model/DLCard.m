@@ -27,9 +27,10 @@
 
 -(instancetype) initWithDictionary:(NSDictionary<NSString *, id> *)dictionary
 {
-    NSString *name = dictionary[@"cards"][@"suit"];
-    NSString *value = dictionary[@"cards"][@"value"];
-    NSString *url = dictionary[@"cards"][@"image"];
+    NSArray *arrayOfCards = dictionary[@"cards"];
+    NSString *name = arrayOfCards.firstObject[@"suit"];
+    NSString *value = arrayOfCards.firstObject[@"value"];
+    NSString *url = arrayOfCards.firstObject[@"image"];
     
     if(!name || !value || !url) {
         return nil;

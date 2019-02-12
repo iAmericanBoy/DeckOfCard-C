@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="LIb-RO-iqf">
             <objects>
-                <viewController id="YZe-TA-GS5" sceneMemberID="viewController">
+                <viewController id="YZe-TA-GS5" customClass="DLCardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vVa-YL-kq8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,9 @@
                                         <rect key="frame" x="0.0" y="599" width="375" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Draw Card"/>
+                                        <connections>
+                                            <action selector="drawCardButtonTapped:" destination="YZe-TA-GS5" eventType="touchUpInside" id="b6X-aR-c8C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -53,6 +56,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VKC-32-GFN"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="eeZ-bq-tdk" id="VfA-Hg-33P"/>
+                        <outlet property="suitLabel" destination="bHo-Zc-Aws" id="ZJ1-EK-wMe"/>
+                        <outlet property="valueLabel" destination="hYb-wY-to1" id="dtl-6o-wwp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTn-36-ej2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

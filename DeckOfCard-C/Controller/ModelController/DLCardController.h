@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DLCardController : NSObject
 
 +(void)fetchCardForOneCount:(NSString *)count
-                      completion:(void (^_Nullable) (DLCard *_Nullable))completion;
+                      completion:(void (^_Nullable) (DLCard *_Nullable card))completion;
 +(void)fetchImageForCard:(DLCard *)card
-                 completion:(void (^_Nullable) (UIImage *_Nullable))completion;
+                 completion:(void (^_Nullable) (UIImage *_Nullable pic))completion;
 
 @end
 

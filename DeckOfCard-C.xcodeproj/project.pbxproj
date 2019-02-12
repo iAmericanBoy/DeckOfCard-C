@@ -14,6 +14,7 @@
 		B6E92EC5221369ED00563F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E92EC4221369ED00563F25 /* main.m */; };
 		B6E92ECF22136FBB00563F25 /* DLCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E92ECE22136FBB00563F25 /* DLCard.m */; };
 		B6E92ED32213749000563F25 /* DLCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E92ED22213749000563F25 /* DLCardController.m */; };
+		B6E92ED722137C4700563F25 /* DLCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E92ED622137C4700563F25 /* DLCardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		B6E92ECE22136FBB00563F25 /* DLCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCard.m; sourceTree = "<group>"; };
 		B6E92ED12213749000563F25 /* DLCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCardController.h; sourceTree = "<group>"; };
 		B6E92ED22213749000563F25 /* DLCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCardController.m; sourceTree = "<group>"; };
+		B6E92ED522137C4700563F25 /* DLCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCardViewController.h; sourceTree = "<group>"; };
+		B6E92ED622137C4700563F25 /* DLCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +68,7 @@
 				B6E92EB6221369E900563F25 /* AppDelegate.m */,
 				B6E92ED022136FC000563F25 /* Model */,
 				B6E92ECC22136A0900563F25 /* Views */,
-				B6E92ED42213749300563F25 /* ModelController */,
+				B6E92ED922137C5600563F25 /* Controller */,
 				B6E92ECB22136A0200563F25 /* Resources */,
 			);
 			path = "DeckOfCard-C";
@@ -106,6 +109,24 @@
 				B6E92ED22213749000563F25 /* DLCardController.m */,
 			);
 			path = ModelController;
+			sourceTree = "<group>";
+		};
+		B6E92ED822137C4B00563F25 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B6E92ED522137C4700563F25 /* DLCardViewController.h */,
+				B6E92ED622137C4700563F25 /* DLCardViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B6E92ED922137C5600563F25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6E92ED822137C4B00563F25 /* ViewController */,
+				B6E92ED42213749300563F25 /* ModelController */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E92ECF22136FBB00563F25 /* DLCard.m in Sources */,
+				B6E92ED722137C4700563F25 /* DLCardViewController.m in Sources */,
 				B6E92EC5221369ED00563F25 /* main.m in Sources */,
 				B6E92EB7221369E900563F25 /* AppDelegate.m in Sources */,
 				B6E92ED32213749000563F25 /* DLCardController.m in Sources */,

@@ -40,6 +40,7 @@ static NSString * const baseURlString = @"https://deckofcardsapi.com/api/deck/ne
                 return;
             }
             DLCard *card = [[DLCard alloc] initWithDictionary:topLevelDictionary];
+            NSLog(@"%@", card.value);
             completion(card);
         }
     }] resume];
